@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training - Florian Dahlitz</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Training Page of Florian Dahlitz"/>
+    <meta name="keywords"
+          content="training, courses, resources, florian dahlitz, florian, dahlitz, coding, programming, python, c, java"/>
+    <meta name="author" content="Florian Dahlitz"/>
+
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="{{ twitter_title }}"/>
+    <meta property="og:image" content="{{ url_for('static', filename='images/' + twitter_image_url) }}"/>
+    <meta property="og:url" content="{{ twitter_url }}"/>
+    <meta property="og:description" content="{{ twitter_description }}"/>
+    <meta name="twitter:title" content="{{ twitter_title }}"/>
+    <meta name="twitter:description" content="{{ twitter_description }}"/>
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/' + twitter_image_url) }}"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@DahlitzF"/>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    {% block contents %}
+    {% endblock %}
+    <!-- Load JS -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
