@@ -2,3 +2,18 @@
     max-height: 30px;
     margin-right: 0.5em;
 }
+
+.banner {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+
+.content-section-b {
+    background-color: #343a40;
+    color: #fff;
+    min-height: 200px;
+    width: 100%;
+}
