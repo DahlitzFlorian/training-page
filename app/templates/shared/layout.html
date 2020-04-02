@@ -28,11 +28,38 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="{{ url_for('static', filename='images/favicon/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
 </head>
 <body>
-    {% block contents %}
-    {% endblock %}
-    <!-- Load JS -->
-    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+    <div class="container topnav">
+        <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/brand-icon.png') }}" alt="Brand Icon"> Training</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://florian-dahlitz.de" target="_blank">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://florian-dahlitz.de/contact" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block contents %}
+{% endblock %}
+<!-- Load JS -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
 </html>
