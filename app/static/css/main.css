@@ -7,13 +7,21 @@
     opacity: 0.5;
     filter: alpha(opacity=50);
     overflow: hidden;
-    height: 500px;
+    height: 600px;
     width: 100%;
 }
 
-.content-section-b {
-    background-color: #343a40;
+.content-section-a, .content-section-b {
     color: #fff;
-    min-height: 200px;
+    min-height: 300px;
     width: 100%;
+    padding: 3em 0;
+}
+
+.content-section-a {
+    background-color: #222;
+}
+
+.content-section-b {
+    background-color: #2a2a2a;
 }

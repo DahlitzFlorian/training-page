@@ -1,4 +1,56 @@
 {% extends "shared/layout.html" %}
 {% block contents %}
-    <h1>Hello World</h1>
+<div class="content-section-b d-flex justify-content-center">
+    <div class="row justify-content-center align-self-center text-center">
+        <div class="col-sm-12">
+            <h1>Find the Resources You Need</h1>
+        </div>
+    </div>
+</div>
+<div class="content-section-a d-flex justify-content-center">
+    <div class="container">
+        <!--<div class="card-deck col-md-12 justify-content-center">-->
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4 d-flex justify-content-center">
+                <div class="card col-12 col-sm-9 col-md-12 bg-dark">
+                    <img src="{{ url_for('static', filename='images/favicon/android-chrome-256x256.png') }}"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 d-flex justify-content-center">
+                <div class="card col-12 col-sm-9 col-md-12 bg-dark">
+                    <img src="{{ url_for('static', filename='images/favicon/android-chrome-256x256.png') }}"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4 d-flex justify-content-center">
+                <div class="card col-12 col-sm-9 col-md-12 bg-dark">
+                    <img src="{{ url_for('static', filename='images/favicon/android-chrome-256x256.png') }}"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height
+                            action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
