@@ -2,6 +2,29 @@
     background-color: #1F282D !important;
 }
 
+.card {
+    height: 100%;
+    padding: 0;
+}
+
+.card-link {
+    color: inherit;
+}
+
+.card-link:hover {
+    color: inherit;
+}
+
+.card-link:hover .card-title {
+    text-decoration: underline;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10.5vw;
+    object-fit: cover;
+}
+
 .navbar {
     border-bottom: 2px solid black;
 }
