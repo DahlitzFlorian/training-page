@@ -12,11 +12,24 @@
 }
 
 .banner {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
     overflow: hidden;
     height: 600px;
     width: 100%;
+}
+
+.banner-caption {
+    color: #263238;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+}
+
+.banner-caption h1 {
+    font-size: 5em;
+}
+
+.banner-caption h2 {
+    color: #36454c;
 }
 
 .content-section-a, .content-section-b {
