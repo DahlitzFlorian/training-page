@@ -2,6 +2,10 @@
     background-color: #1F282D !important;
 }
 
+.navbar {
+    border-bottom: 2px solid black;
+}
+
 .navbar-brand > img {
     max-height: 30px;
     margin-right: 0.5em;
