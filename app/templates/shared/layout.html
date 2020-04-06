@@ -63,6 +63,12 @@
     </div>
     {% block contents %}
     {% endblock %}
+    <footer class="page-footer font-small bg-dark d-flex justify-content-center">
+        <div class="footer-copyright text-center py-3">&copy; {{ now.year }} Copyright:
+            <a href="https://florian-dahlitz.de/" target="_blank"> Florian Dahlitz</a>. All Rights Reserved.
+        </div>
+    </footer>
+
     <!-- Load JS -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>

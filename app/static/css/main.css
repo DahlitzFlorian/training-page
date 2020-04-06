@@ -1,3 +1,7 @@
+.bg-dark {
+    background-color: #1F282D !important;
+}
+
 .navbar-brand > img {
     max-height: 30px;
     margin-right: 0.5em;
@@ -19,9 +23,15 @@
 }
 
 .content-section-a {
-    background-color: #222;
+    background-color: #263238;
 }
 
 .content-section-b {
-    background-color: #2a2a2a;
+    background-color: #1F282D;
+}
+
+.page-footer {
+    color: #fff;
+    min-height: 100px;
+    align-items: center;
 }
