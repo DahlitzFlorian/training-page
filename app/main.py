@@ -2,10 +2,14 @@ from datetime import datetime
 
 from flask import Flask
 from flask import render_template
+from flask_caching import Cache
+from flask_compress import Compress
 
 from config import config
 
 app = Flask(__name__)
+cache = Cache(app, config={"CACHE_TYPE": "simple"})
+Compress(app)
 
 
 @app.context_processor
@@ -14,6 +18,7 @@ def inject_now():
 
 
 @app.route("/")
+@cache.cached(timeout=60)
 def home():
     social_media_info = config.get_social_media_info()
 

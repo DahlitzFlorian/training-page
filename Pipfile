@@ -8,3 +8,5 @@ verify_ssl = true
 [packages]
 flask = "*"
 pyyaml = "*"
+flask-compress = "*"
+flask-caching = "*"
