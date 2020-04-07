@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  portfolio:
+  training:
     build: ./
     image: training:latest
     networks:
