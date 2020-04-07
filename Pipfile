@@ -8,6 +8,3 @@ verify_ssl = true
 [packages]
 flask = "*"
 pyyaml = "*"
-
-[requires]
-python_version = "3.8"
