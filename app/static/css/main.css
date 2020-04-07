@@ -21,8 +21,32 @@
 
 .card-img-top {
     width: 100%;
-    height: 10.5vw;
+    height: 50vw;
     object-fit: cover;
+}
+
+@media (min-width: 576px) {
+    .card-img-top {
+        height: 218px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-img-top {
+        height: 165px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-img-top {
+        height: 200px;
+    }
 }
 
 .navbar {
