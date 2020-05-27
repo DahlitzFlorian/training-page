@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "training-page"
+version = "0.1.0"
+description = ""
+authors = ["Florian Dahlitz <contact@florian-dahlitz.de>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "*"
+pyyaml = "*"
+flask-compress = "*"
+flask-caching = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=1.0.5"]
+build-backend = "poetry.masonry.api"
