@@ -1,11 +1,10 @@
 from datetime import datetime
 
+from config import config
 from flask import Flask
 from flask import render_template
 from flask_caching import Cache
 from flask_compress import Compress
-
-from config import config
 
 app = Flask(__name__)
 cache = Cache(app, config={"CACHE_TYPE": "simple"})
